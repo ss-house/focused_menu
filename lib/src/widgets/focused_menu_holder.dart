@@ -121,7 +121,8 @@ class _FocusedMenuHolderState extends State<FocusedMenuHolder> {
   Widget build(BuildContext context) {
     return GestureDetector(
       key: _containerKey,
-      onTap: widget.openMode == OpenMode.onTap ? _openMenu : null,
+      behavior: HitTestBehavior.translucent,
+      onTap: () => widget.onPressed?.call(),
       onLongPress: widget.openMode == OpenMode.onLongPress ? _openMenu : null,
       child: widget.child,
     );
@@ -142,7 +143,7 @@ class _FocusedMenuHolderState extends State<FocusedMenuHolder> {
     final menuOffset = Offset(offset.dx, offset.dy);
     final childSize = size;
 
-    widget.onPressed?.call();
+    //widget.onPressed?.call();
     widget.onOpened?.call();
 
     try {
