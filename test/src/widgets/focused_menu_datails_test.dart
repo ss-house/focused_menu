@@ -17,7 +17,7 @@ void main() {
               title: const Text("Item"),
               onPressed: () {},
               trailing: const Icon(Icons.arrow_forward),
-            )
+            ),
           ],
           child: const Text('Tap me'),
         ),
@@ -44,7 +44,7 @@ void main() {
               title: const Text("Item"),
               onPressed: () {},
               trailing: const Icon(Icons.arrow_forward),
-            )
+            ),
           ],
           child: const Text('Tap me'),
         ),
@@ -79,7 +79,7 @@ void main() {
               title: const Text("Item"),
               onPressed: () {},
               trailing: const Icon(Icons.arrow_forward),
-            )
+            ),
           ],
           child: const Text('Tap me'),
         ),

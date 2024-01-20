@@ -32,7 +32,7 @@ class _Example2State extends State<Example2> {
               child: Image.asset("assets/images/dp_default.png"),
             ),
           ),
-          SizedBox(width: 20)
+          SizedBox(width: 20),
         ],
       ),
       body: Column(

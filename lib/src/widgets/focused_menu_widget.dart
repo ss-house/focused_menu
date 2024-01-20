@@ -5,7 +5,7 @@ final _defaultBoxDecoration = BoxDecoration(
   color: Colors.grey.shade200,
   borderRadius: const BorderRadius.all(Radius.circular(5.0)),
   boxShadow: const [
-    BoxShadow(color: Colors.black38, blurRadius: 10, spreadRadius: 1)
+    BoxShadow(color: Colors.black38, blurRadius: 10, spreadRadius: 1),
   ],
 );
 
@@ -81,7 +81,7 @@ class FocusedMenuWidget extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           item.title,
-                          if (item.trailing != null) ...[item.trailing!]
+                          if (item.trailing != null) ...[item.trailing!],
                         ],
                       ),
                     ),
